@@ -1120,7 +1120,7 @@ db.run("CREATE INDEX IF NOT EXISTS idx_posts_user_id ON posts(user_id)");
 
 ### Data Validation
 
-`````javascript
+```javascript
 function validateUser(user) {
   const errors = [];
 
@@ -1152,7 +1152,7 @@ function validateUser(user) {
 }
 
 
-````javascript
+```javascript
 // Usage
 function createUser(userData) {
   // Validate input
@@ -1191,7 +1191,7 @@ function createUser(userData) {
 
 A well-organized approach separates database operations into logical modules:
 
-````javascript
+```javascript
 // db/models/user.js
 const db = require('../database').getDatabase();
 
@@ -1270,7 +1270,7 @@ module.exports = User;
 
 ### Using the Model in Your Application
 
-````javascript
+```javascript
 // routes/users.js
 const express = require('express');
 const router = express.Router();
@@ -1379,7 +1379,7 @@ module.exports = router;
 
 ### Database Backup
 
-````javascript
+```javascript
 const fs = require('fs');
 const path = require('path');
 
@@ -1433,7 +1433,7 @@ module.exports = {
 
 ### Testing Database Operations
 
-````javascript
+```javascript
 // test/user.test.js
 const assert = require('assert');
 const sqlite3 = require('sqlite3').verbose();
@@ -1519,8 +1519,7 @@ describe('User Model', function() {
 ```
 
 ### Logging Database Operations
-
-````javascript
+```javascript
 // db/logger.js
 const fs = require('fs');
 const path = require('path');
@@ -1637,7 +1636,7 @@ module.exports = new DatabaseLogger({
 
 ### Using the Logger
 
-````javascript
+```javascript
 // db/models/user.js with logging
 const db = require('../database').getDatabase();
 const logger = require('../logger');
@@ -1710,7 +1709,7 @@ module.exports = User;
 
 ### Monitoring Database Performance
 
-````javascript
+```javascript
 // db/performance.js
 const logger = require('./logger');
 
@@ -1810,7 +1809,7 @@ module.exports = new DatabasePerformanceMonitor();
 
 ### Using the Performance Monitor
 
-````javascript
+```javascript
 // db/database.js with performance monitoring
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
@@ -1943,4 +1942,4 @@ module.exports = {
 9. **Validate Input**: Always validate and sanitize user input before using it in database operations.
 
 10. **Parameterize Queries**: Never concatenate user input directly into SQL strings to prevent SQL injection.
-`````
+```

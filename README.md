@@ -110,7 +110,7 @@ The Advanced section covers professional SQLite with Node.js development techniq
 - Structure large applications
 - Debug effectively
 
-## Real-World Example (RealWorldSQLiteNodeExample.md)
+## Real-World Example (CollectTrackerSQLiteNodeExample.md)
 
 The Example section demonstrates SQLite with Node.js in a real-world application:
 
@@ -145,14 +145,14 @@ SQLite-Node-Reference/
 ├── SQLiteNodeElements.md           # Quick Reference
 ├── SQLiteNodeBasics.md             # Fundamental Concepts
 ├── AdvancedSQLiteNode.md           # Advanced Topics
-└── RealWorldSQLiteNodeExample.md   # Real-World Example
+└── CollectTrackerSQLiteNodeExample.md   # Real-World Example
 ```
 
 ## Getting Started
 1. Start with SQLiteNodeElements.md for quick SQLite with Node.js reference
 2. Move to SQLiteNodeBasics.md for foundational concepts
 3. Explore AdvancedSQLiteNode.md for professional techniques
-4. Study RealWorldSQLiteNodeExample.md for real-world implementation
+4. Study CollectTrackerSQLiteNodeExample.md for real-world implementation
 
 ## Resources
 
